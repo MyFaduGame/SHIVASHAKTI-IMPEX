@@ -1,99 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Shivashakti Impex — Exporters of garments and agricultural products with global quality and trust." />
-    <title>Shivashakti Impex | Export Excellence Worldwide</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/679/679922.png" type="image/png" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivashakti Impex — Exporters of garments and agricultural products with global quality and trust." />
+  <title>Shivashakti Impex | Export Excellence Worldwide</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/679/679922.png" type="image/png" />
+  
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f8faf8;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      color: #146c43;
+    }
+    a {
+      color: #146c43;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 
-  <body class="bg-gray-50 text-gray-800">
-    <!-- Header Section -->
-    <header class="bg-gradient-to-r from-green-700 to-green-500 text-white py-8 shadow-lg">
-      <div class="max-w-6xl mx-auto text-center">
-        <h1 class="text-4xl font-extrabold mb-2 tracking-wide">SHIVASHAKTI IMPEX</h1>
-        <p class="text-lg">Exporters of Garments & Agricultural Products</p>
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #146c43, #198754);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Section */
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    /* Focus Section */
+    .focus-section {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+    .focus-section img {
+      flex: 1 1 350px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .focus-section div {
+      flex: 1 1 350px;
+    }
+    .focus-section ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .focus-section li {
+      margin-bottom: 0.8rem;
+      font-size: 1.05rem;
+    }
+
+    /* Leadership Section */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .member {
+      background-color: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .member:hover {
+      transform: translateY(-5px);
+    }
+    .member h3 {
+      color: #198754;
+      margin-bottom: 0.5rem;
+    }
+    .member p {
+      color: #555;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: linear-gradient(90deg, #198754, #157347);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .contact-box {
+      background: #fff;
+      color: #333;
+      display: inline-block;
+      text-align: left;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 2.5rem 1rem;
+      }
+      .focus-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>SHIVASHAKTI IMPEX</h1>
+    <p>Exporters of Garments & Agricultural Products</p>
+  </header>
+
+  <!-- About Section -->
+  <section>
+    <h2>About Us</h2>
+    <p>
+      At <strong>Shivashakti Impex</strong>, we are driven by a passion for delivering
+      <strong>high-quality garments and agricultural products</strong> to international markets. With a focus on
+      <strong>quality, consistency, and trust</strong>, our firm is dedicated to building long-term relationships with
+      global clients through timely supply, competitive pricing, and adherence to international standards.
+    </p>
+    <p>
+      Our vision is to <strong>expand globally</strong> by ensuring excellence in every shipment and
+      fostering growth through innovation, reliability, and customer satisfaction.
+    </p>
+  </section>
+
+  <!-- Focus Section -->
+  <section>
+    <div class="focus-section">
+      <div>
+        <h2>Our Focus Areas</h2>
+        <ul>
+          <li>Export of premium quality garments for global markets.</li>
+          <li>Sourcing and exporting fresh agricultural products adhering to international standards.</li>
+          <li>Ensuring on-time delivery with a commitment to customer satisfaction.</li>
+          <li>Maintaining transparency and long-term partnerships with clients worldwide.</li>
+        </ul>
       </div>
-    </header>
+      <img src="https://images.unsplash.com/photo-1543163521-1bf539c55ddc?auto=format&fit=crop&w=900&q=80" alt="Export business">
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="py-12 px-6 max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-green-700 mb-6">About Us</h2>
-      <p class="text-lg leading-relaxed text-gray-700">
-        At <strong>Shivashakti Impex</strong>, we are driven by a passion for delivering 
-        <span class="font-semibold text-green-600">high-quality garments and agricultural products</span> 
-        to international markets. With a focus on <span class="font-semibold">quality, consistency, and trust</span>,
-        our firm is dedicated to building long-term relationships with global clients through 
-        timely supply, competitive pricing, and adherence to international standards.
-      </p>
-      <p class="mt-6 text-lg text-gray-700">
-        Our vision is to <strong>expand globally</strong> by ensuring excellence in every shipment and 
-        fostering growth through innovation, reliability, and customer satisfaction.
-      </p>
-    </section>
-
-    <!-- Our Focus Section -->
-    <section class="bg-white py-12 px-6">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h2 class="text-3xl font-bold text-green-700 mb-4">Our Focus Areas</h2>
-          <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
-            <li>Export of premium quality garments for global markets.</li>
-            <li>Sourcing and exporting fresh agricultural products adhering to international standards.</li>
-            <li>Ensuring on-time delivery with a commitment to customer satisfaction.</li>
-            <li>Maintaining transparency and long-term partnerships with clients worldwide.</li>
-          </ul>
-        </div>
-        <div class="flex justify-center">
-          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55ddc?auto=format&fit=crop&w=900&q=80" 
-               alt="Export business" 
-               class="rounded-2xl shadow-lg w-full md:w-4/5" />
-        </div>
+  <!-- Leadership Section -->
+  <section>
+    <h2>Our Leadership</h2>
+    <div class="team">
+      <div class="member">
+        <h3>Anirudh Mishra</h3>
+        <p>Managing Partner</p>
       </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="bg-green-50 py-12 px-6 text-center">
-      <h2 class="text-3xl font-bold text-green-700 mb-6">Our Leadership</h2>
-      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div class="bg-white shadow-md rounded-2xl p-6">
-          <h3 class="text-xl font-semibold text-green-700">Anirudh Mishra</h3>
-          <p class="text-gray-600">Managing Partner</p>
-        </div>
-        <div class="bg-white shadow-md rounded-2xl p-6">
-          <h3 class="text-xl font-semibold text-green-700">Sangeeta Mishra</h3>
-          <p class="text-gray-600">Partner</p>
-        </div>
-        <div class="bg-white shadow-md rounded-2xl p-6">
-          <h3 class="text-xl font-semibold text-green-700">Kaustubh Pandit</h3>
-          <p class="text-gray-600">Partner</p>
-        </div>
+      <div class="member">
+        <h3>Sangeeta Mishra</h3>
+        <p>Partner</p>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="bg-gradient-to-r from-green-700 to-green-500 text-white py-12 px-6">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-        <p class="text-lg mb-6">
-          Interested in doing business with us or learning more about our export offerings?  
-          Reach out anytime — we’d love to connect.
-        </p>
-        <div class="bg-white text-gray-800 rounded-2xl shadow-lg p-6 inline-block text-left">
-          <p><strong>Firm:</strong> SHIVASHAKTI IMPEX</p>
-          <p><strong>GSTN:</strong> 24AFAFS1197M1ZP</p>
-          <p><strong>Phone:</strong> <a href="tel:+917048582799" class="text-green-700 hover:underline">+91 7048582799</a></p>
-          <p><strong>Email:</strong> <a href="mailto:shivashakti2227@gmail.com" class="text-green-700 hover:underline">shivashakti2227@gmail.com</a></p>
-        </div>
+      <div class="member">
+        <h3>Kaustubh Pandit</h3>
+        <p>Partner</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-6 text-center">
-      <p class="text-sm">© 2025 SHIVASHAKTI IMPEX. All Rights Reserved.</p>
-      <p class="text-xs mt-1">Designed with ❤️ for global excellence.</p>
-    </footer>
-  </body>
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>
+      Interested in doing business with us or learning more about our export offerings?
+      Reach out anytime — we’d love to connect.
+    </p>
+    <div class="contact-box">
+      <p><strong>Firm:</strong> SHIVASHAKTI IMPEX</p>
+      <p><strong>GSTN:</strong> 24AFAFS1197M1ZP</p>
+      <p><strong>Phone:</strong> <a href="tel:+917048582799">+91 7048582799</a></p>
+      <p><strong>Email:</strong> <a href="mailto:shivashakti2227@gmail.com">shivashakti2227@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SHIVASHAKTI IMPEX. All Rights Reserved.</p>
+    <p>Designed with ❤️ for global excellence.</p>
+  </footer>
+</body>
 </html>
